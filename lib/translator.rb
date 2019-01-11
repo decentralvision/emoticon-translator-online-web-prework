@@ -1,7 +1,8 @@
 # require modules here
 require "yaml"
 def load_library(file_path)
-  dict = YAML.load_file(file_path)
+  output =
+  yaml = YAML.load_file(file_path)
   dict.each
   dict
 end
