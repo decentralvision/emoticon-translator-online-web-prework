@@ -11,7 +11,7 @@ def load_library(file_path)
 end
 
 def get_japanese_emoticon(yaml, emoticon)
-  load_library(yaml)
+  load_library(yaml)[emoticon]
 end
 
 def get_english_meaning
