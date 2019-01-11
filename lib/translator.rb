@@ -10,7 +10,7 @@ def load_library(file_path)
   dict
 end
 
-def get_japanese_emoticon(yaml, emoticon)
+def get_japanese_emoticon(yaml_file, emoticon)
   load_library(yaml)['get_emoticon'][emoticon]
 end
 
