@@ -2,7 +2,7 @@
 require "yaml"
 def load_library(file_path)
   dict = YAML.load_file(file_path)
-  puts dict
+  dict.each
   dict
 end
 
