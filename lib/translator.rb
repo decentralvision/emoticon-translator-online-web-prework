@@ -5,7 +5,7 @@ def load_library(file_path)
   yaml = YAML.load_file(file_path)
   yaml.each do |key, hash|
     dict[get_meaning][hash[1]] = key
-    dict[get_emoticon][hash[0]]
+    dict[get_emoticon][hash[0]] = hash[1]
   end
 end
 
