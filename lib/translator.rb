@@ -1,6 +1,6 @@
 # require modules here
 require "yaml"
-def load_library(file)
+def load_library(file_path)
   dict = YAML.load_file(file)
 end
 
