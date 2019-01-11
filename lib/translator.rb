@@ -19,7 +19,8 @@ def get_japanese_emoticon(yaml_file, emoticon)
 end
 
 def get_english_meaning(yaml_file, emoticon)
-  if load_library(yaml_file)['meaning'][emoticon] == nil
+  meaning = load_library(yaml_file)['meaning'][emoticon]
+  if meaning == nil
     puts 'Sorry, that emoticon was not found'
   else
     load_library(yaml_file)['meaning'][emoticon]
