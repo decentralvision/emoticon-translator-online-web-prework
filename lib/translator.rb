@@ -12,8 +12,9 @@ end
 
 def get_japanese_emoticon(yaml_file, emoticon)
   emoticon = load_library(yaml_file)['get_emoticon'][emoticon]
+  apology = 'Sorry, that emoticon was not found'
   if  emoticon == nil
-   return 'Sorry, that emoticon was not found'
+   apology
   else
    emoticon
   end
