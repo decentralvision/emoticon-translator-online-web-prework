@@ -11,11 +11,12 @@ def load_library(file_path)
 end
 
 def get_japanese_emoticon(yaml_file, emoticon)
-   if load_library(yaml_file)['get_emoticon'][emoticon] == nil
-     puts 'Sorry, that emoticon was not found'
-   else
-     load_library(yaml_file)['get_emoticon'][emoticon]
-   end
+  emoticon = load_library(yaml_file)['get_emoticon'][emoticon]
+  if  emoticon == nil
+   puts 'Sorry, that emoticon was not found'
+  else
+   load_library(yaml_file)['get_emoticon'][emoticon]
+  end
 end
 
 def get_english_meaning(yaml_file, emoticon)
