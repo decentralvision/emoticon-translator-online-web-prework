@@ -23,7 +23,6 @@ def get_japanese_emoticon(yaml_file, emoticon)
 end
 
 def get_english_meaning(yaml_file, emoticon)
-  binding.pry
   meaning = load_library(yaml_file)["get_meaning"][emoticon]
   apology = 'Sorry, that emoticon was not found'
   if meaning == nil
