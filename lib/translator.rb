@@ -1,10 +1,10 @@
 # require modules here
 require "yaml"
 def load_library(file_path)
-  output =
+  dict = {get_meaning => {}, get_emoticon => {}}
   yaml = YAML.load_file(file_path)
-  dict.each
-  dict
+  yaml.each do |key, hash|
+    dict[]
 end
 
 def get_japanese_emoticon
